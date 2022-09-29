@@ -1,0 +1,94 @@
+#secondary_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  margin-top: 91px;
+  width: 100%;
+  gap: 60px;
+  color: rgb(129, 129, 129);
+}
+
+#secondary_nav > div {
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+}
+
+.fruits_section > div:first-child {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.fruits_section > div:first-child p {
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.fruits_section > div:last-child {
+  position: absolute;
+  top: 39px;
+  left: -4px;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 8px;
+  padding: 16px;
+  visibility: hidden;
+}
+
+.fruits_section:hover > div:last-child {
+  visibility: visible;
+}
+
+.vegetable_section > div:first-child {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.vegetable_section > div:first-child p {
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.vegetable_section > div:last-child {
+  position: absolute;
+  top: 39px;
+  left: -4px;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 8px;
+  padding: 16px;
+  visibility: hidden;
+}
+
+.vegetable_section:hover > div:last-child {
+  visibility: visible;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  color: black;
+  gap: 4px;
+}
+
+.list>p{
+  line-height: 30px;
+  margin: 0px;
+  padding: 0px 16px;
+  border-radius: 4px;
+}
+
+.list>p:hover{
+  background-color: rgb(228, 228, 228);
+}

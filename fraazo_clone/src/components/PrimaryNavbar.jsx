@@ -1,0 +1,45 @@
+import React from "react";
+import "../stylesheets/primary_navbar.css";
+
+const PrimaryNavbar = () => {
+  return (
+    <div id="navbar">
+      <div className="nav_box1">
+        <div className="logo">
+          <img
+            src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg"
+            alt="logo"
+          />
+        </div>
+        <div className="location">
+          <span class="material-icons">location_on</span> <p>povai</p>
+        </div>
+      </div>
+      <div className="nav_box2">
+        <input
+          className="search_bar"
+          type="text"
+          placeholder="Find fresh vegetables, fruits and dairy..."
+        />
+        <div className="search_icon">
+          <span class="material-icons">search</span>
+        </div>
+      </div>
+      <div className="nav_box3">
+        <div className="cart">
+          <div className="cart_icon_and_count">
+            <span class="material-icons">shopping_cart</span>
+            <div className="cart_count">0</div>
+          </div>
+          <p>cart</p>
+        </div>
+        <div className="login">
+          <span class="material-icons">person</span>
+          <p>login</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PrimaryNavbar;

@@ -1,10 +1,14 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Banner from '../components/Banner'
+import PrimaryNavbar from '../components/PrimaryNavbar'
+import SecondaryNavbar from '../components/SecondaryNavbar'
 
 const Home = () => {
   return (
     <>
-      <Navbar/>
+      <PrimaryNavbar/>
+      <SecondaryNavbar/>
+      <Banner/>
     </>
   )
 }
