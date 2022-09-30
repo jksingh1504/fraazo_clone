@@ -1,7 +1,7 @@
 import { Tooltip } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import InfoIcon from "@mui/icons-material/Info";
-import "../stylesheets/ProductPage.css";
+import "../stylesheets/ProductPage/ProductPage.css";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import CloseIcon from "@mui/icons-material/Close";
 import { getCart } from "../Redux/AppRedux/actions";
@@ -116,8 +116,8 @@ const CartPage = ({setOpenCart}) => {
 				<br />
 				<br />
 				<br />
-				<br />
 				<img
+					style={{position:"relative",zIndex:"-1"}}
 					src="https://webasset.fraazo.com/production/empty_cart.35cdf7d10a7af693e2ea.png"
 					alt=""
 				/>

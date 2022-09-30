@@ -2,7 +2,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import Filter from "../components/ProductPage/Filter";
 import ProductList from "../components/ProductPage/ProductList";
-import "../stylesheets/ProductPage.css";
+import "../stylesheets/ProductPage/ProductPage.css";
 import PrimaryNavbar from "../components/Navbar/PrimaryNavbar";
 import SecondaryNavbar from "../components/Navbar/SecondaryNavbar";
 

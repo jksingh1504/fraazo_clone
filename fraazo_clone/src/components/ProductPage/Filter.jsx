@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import React, { useState } from "react";
-import "../../stylesheets/ProductPage.css";
+import "../../stylesheets/ProductPage/ProductPage.css";
 import AddIcon from "@mui/icons-material/Add";
 
 const Filter = () => {
@@ -57,7 +57,7 @@ const Filter = () => {
           {fruitFilter.map((ele, indx) => (
             <Box className="filterchild" key={indx}>
               <ArrowForwardIosSharpIcon
-                sx={{ fontSize: "12px", marginRight: "6px" }}
+                sx={{ fontSize: "11px", marginRight: "6px" }}
               />
               {fruitFilter[indx]}
             </Box>
@@ -87,7 +87,7 @@ const Filter = () => {
           {vegFilter.map((ele, indx) => (
             <Box className="filterchild" key={indx}>
               <ArrowForwardIosSharpIcon
-                sx={{ fontSize: "12px", marginRight: "6px" }}
+                sx={{ fontSize: "11px", marginRight: "6px" }}
               />
               {vegFilter[indx]}
             </Box>

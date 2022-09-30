@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import "../../stylesheets/ProductPage.css";
+import "../../stylesheets/ProductPage/ProductPage.css";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const AddToCartButton = ({ product, cartItem }) => {

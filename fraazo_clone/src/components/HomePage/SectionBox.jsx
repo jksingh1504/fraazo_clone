@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../stylesheets/section_box.css";
+import "../../stylesheets/HomePage/section_box.css";
 
 const SectionBox = () => {
   return (

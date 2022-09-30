@@ -1,9 +1,9 @@
 import React from "react";
-import "../../stylesheets/show_case.css";
+import "../../stylesheets/HomePage/show_case.css";
 import Carousel from "better-react-carousel";
 import ProductCard from "../ProductPage/ProductCard";
 import { Box } from "@mui/material";
-import styles from "../../stylesheets/CenterBox.module.css";
+import styles from "../../stylesheets/HomePage/CenterBox.module.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
