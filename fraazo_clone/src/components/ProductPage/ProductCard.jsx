@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import React from "react";
-import "../stylesheets/ProductPage.css";
+import "../../stylesheets/ProductPage.css";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import InfoIcon from '@mui/icons-material/Info';
 import Tooltip from '@mui/material/Tooltip';

@@ -1,8 +1,8 @@
 import { Drawer } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CartPage from "../Pages/CartPage";
-import "../stylesheets/primary_navbar.css";
+import CartPage from "../../Pages/CartPage";
+import "../../stylesheets/primary_navbar.css";
 
 const PrimaryNavbar = () => {
   const [openCart, setOpenCart] = useState(false);

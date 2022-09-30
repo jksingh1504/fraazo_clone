@@ -1,10 +1,10 @@
 import { Box } from "@mui/system";
 import React from "react";
-import Filter from "../components/Filter";
-import ProductList from "../components/ProductList";
+import Filter from "../components/ProductPage/Filter";
+import ProductList from "../components/ProductPage/ProductList";
 import "../stylesheets/ProductPage.css";
-import PrimaryNavbar from "../components/PrimaryNavbar";
-import SecondaryNavbar from "../components/SecondaryNavbar";
+import PrimaryNavbar from "../components/Navbar/PrimaryNavbar";
+import SecondaryNavbar from "../components/Navbar/SecondaryNavbar";
 
 // import Footer2 from "../components/HomePage/Footer2";
 

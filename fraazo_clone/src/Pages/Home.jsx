@@ -1,11 +1,11 @@
 import React from 'react'
-import Banner from '../components/Banner'
-import BestDeals from '../components/BestDeals'
-import Fruits from '../components/Fruits'
-import PrimaryNavbar from '../components/PrimaryNavbar'
-import SecondaryNavbar from '../components/SecondaryNavbar'
-import SectionBox from '../components/SectionBox'
-import Vegetables from '../components/Vegetables'
+import Banner from '../components/HomePage/Banner'
+import BestDeals from '../components/HomePage/BestDeals'
+import Fruits from '../components/HomePage/Fruits'
+import PrimaryNavbar from '../components/Navbar/PrimaryNavbar'
+import SecondaryNavbar from '../components/Navbar/SecondaryNavbar'
+import SectionBox from '../components/HomePage/SectionBox'
+import Vegetables from '../components/HomePage/Vegetables'
 
 const Home = () => {
   return (

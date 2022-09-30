@@ -1,6 +1,6 @@
 import { Box, Breadcrumbs, Link, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import "../stylesheets/ProductPage.css";
+import "../../stylesheets/ProductPage.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import ProductCard from "./ProductCard";
 // import axios from "axios";

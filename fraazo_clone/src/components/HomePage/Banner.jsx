@@ -1,6 +1,6 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
-import "../stylesheets/banner.css"
+import "../../stylesheets/banner.css"
 
 const Banner = () => {
   return (

@@ -1,12 +1,12 @@
 import React from "react";
-import "../stylesheets/show_case.css";
+import "../../stylesheets/show_case.css";
 import Carousel from "better-react-carousel";
-import ProductCard from "./ProductCard";
+import ProductCard from "../ProductPage/ProductCard";
 import { Box } from "@mui/material";
-import styles from "../stylesheets/CenterBox.module.css";
+import styles from "../../stylesheets/CenterBox.module.css";
 import { useEffect } from "react";
 import { useDispatch,useSelector } from "react-redux";
-import * as action from "../Redux/AppRedux/actions"
+import * as action from "../../Redux/AppRedux/actions"
 
 const BestDeals = () => {
   const best_deals = [

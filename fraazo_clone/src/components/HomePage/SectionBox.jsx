@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../stylesheets/section_box.css";
+import "../../stylesheets/section_box.css";
 
 const SectionBox = () => {
   return (
@@ -10,7 +10,7 @@ const SectionBox = () => {
       <br />
       <br />
       <div id="section_box">
-        <Link to="/">
+        <Link to="/products">
           <div>
             <img
               src="https://imagemaster.fraazo.com/fraazo-master/webban/Fruits.png"
@@ -18,7 +18,7 @@ const SectionBox = () => {
             />
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/products">
           <div>
             <img
               src="https://imagemaster.fraazo.com/fraazo-master/webban/Vegetables.png"

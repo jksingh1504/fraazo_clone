@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/secondary_navbar.css";
+import "../../stylesheets/secondary_navbar.css";
 
 const SecondaryNavbar = () => {
   const fruits_list = [

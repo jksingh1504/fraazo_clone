@@ -1,9 +1,9 @@
 import React from "react";
-import "../stylesheets/show_case.css";
+import "../../stylesheets/show_case.css";
 import Carousel from "better-react-carousel";
-import ProductCard from "./ProductCard";
+import ProductCard from "../ProductPage/ProductCard";
 import { Box } from "@mui/material";
-import styles from "../stylesheets/CenterBox.module.css";
+import styles from "../../stylesheets/CenterBox.module.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -125,7 +125,7 @@ const Fruits = () => {
 
   return (
     <div className="show_case">
-      <h1>Fruits <Link to="/" style={{textDecoration:"none",color:"#ea669f",fontSize:"16px",fontWeight:"500"}}>(Veiw All)</Link></h1>
+      <h1>Fruits <Link to="/products" style={{textDecoration:"none",color:"#ea669f",fontSize:"16px",fontWeight:"500"}}>(Veiw All)</Link></h1>
       <br />
       <Carousel cols={curousel_col} rows={1} gap={10} loop={false}>
         {fruits.map((item, index) => (

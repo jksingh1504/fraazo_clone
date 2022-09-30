@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import React, { useState } from "react";
-import "../stylesheets/ProductPage.css";
+import "../../stylesheets/ProductPage.css";
 import AddIcon from "@mui/icons-material/Add";
 
 const Filter = () => {
