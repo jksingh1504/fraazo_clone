@@ -1,0 +1,107 @@
+.centerBox {
+  width: 90%;
+  height: 100%;
+  margin: 3% auto;
+}
+
+
+*{
+	font-family:"Quicksand", sans-serif;
+}
+
+.carousalBox {
+  margin: 4% 4% 4% 4%;
+  border-radius: 4px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  transition: transform 0.8s, box-shadow 0.8s;
+}
+.carousalBox:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: scale(1.005);
+}
+
+.carousalBox > div > img {
+  background-color: #f9f9f9;
+}
+
+/* 2 cards fruit and vegitable */
+
+.fruitCardBoxs {
+  margin: 2% auto;
+  width: 50%;
+  padding: 0 1% 1% 1%;
+}
+
+.fruit {
+  margin-right: 5%;
+  width: 47%;
+}
+
+/* Fruits section */
+
+.centerBox a {
+  font-size: 15px;
+  color: #ffa294;
+  text-decoration: none;
+}
+
+/* footer */
+.footerImg2 {
+  width: 85%;
+  position: absolute;
+  top: 20%;
+  right: 8%;
+}
+.footerImg1 {
+  width: 100%;
+  position: absolute;
+}
+.downloadButtons {
+  height: 80%;
+  width: 50%;
+  border-radius: 50px;
+  color: black;
+  border-color: white;
+  /* transition: 0.2; */
+}
+
+.selectedBtn{
+    color:white;
+    background-color: black;
+    /* border:1px solid black; */
+    transition: 0.2;
+}
+
+.mobileInp{
+    margin: 5% auto;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 10px;
+}
+
+.submitBtn{
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    background-color: #a8ecdc;
+    color: white;
+}
+
+.footerBody2{
+    background-color: #165241;
+    height: auto;
+    margin-top: -1%;
+    padding-top: 5%;
+}
+
+/* .footerBody2 > div > div img{
+    background-color: #165241;
+} */
+
+.googleLogo{
+   margin-top: 2%; 
+}
+

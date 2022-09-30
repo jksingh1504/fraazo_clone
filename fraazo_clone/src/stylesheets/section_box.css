@@ -1,0 +1,11 @@
+#section_box{
+    display: grid;
+    grid-template-columns: 22% 22%;
+    gap: 2.5%;
+    justify-content: center;
+}
+
+
+#section_box img{
+    width: 100%;
+}

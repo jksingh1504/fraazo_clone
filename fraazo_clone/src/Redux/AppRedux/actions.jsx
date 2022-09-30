@@ -1,32 +1,33 @@
-import * as types from "./actionTypes";
+import * as actionTypes from "./actionTypes";
 
 export const getProductRequest = () => {
 	return {
-		type: types.GET_PRODUCT_REQUEST,
+		type: actionTypes.GET_PRODUCT_REQUEST,
 	};
 };
 
 export const getProductSuccess = (payload) => {
 	return {
-		type: types.GET_PRODUCT_REQUEST,
+		type: actionTypes.GET_PRODUCT_REQUEST,
 		payload,
 	};
 };
 
 export const getProductFailure = () => {
 	return {
-		type: types.GET_PRODUCT_REQUEST,
+		type: actionTypes.GET_PRODUCT_REQUEST,
 	};
 };
 
 
+export const setCurouselCol=(payload)=>{
+	return {type:actionTypes.SET_CUROUSEL_COL,payload}
+}
 
 
-
-// export const getCart = (payload) => (dispatch) => {
-// 	dispatch(getProductRequest());
-// 	axios
-// 		.get("http://localhost:8080/cart")
-// 		.then((r) => dispatch(getCartSuccess(r.data)))
-// 		.catch((e) => dispatch(getProductFailure()));
-// };
+export const getCart = (payload) => (dispatch) => {
+	dispatch(getProductRequest());
+	fetch("http://localhost:8080/cart")
+		.then((r) => dispatch(getCart(r.data)))
+		.catch((e) => dispatch(getProductFailure()));
+};

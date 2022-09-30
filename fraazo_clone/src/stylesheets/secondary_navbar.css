@@ -7,13 +7,14 @@
   margin-top: 91px;
   width: 100%;
   gap: 60px;
-  color: rgb(129, 129, 129);
+  color: rgb(68, 68, 68);
 }
 
 #secondary_nav > div {
   position: relative;
   cursor: pointer;
   height: 100%;
+  z-index: 2;
 }
 
 .fruits_section > div:first-child {

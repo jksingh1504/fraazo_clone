@@ -21,7 +21,7 @@ const SecondaryNavbar = () => {
       <div className="fruits_section">
         <div>
           <p>Fruits</p>
-          <span class="material-icons">expand_more</span>
+          <span className="material-icons">expand_more</span>
         </div>
         <div className="list">
           {fruits_list.map((ele, indx) => (
@@ -32,10 +32,10 @@ const SecondaryNavbar = () => {
       <div className="vegetable_section">
         <div>
           <p>Vegetables</p>
-          <span class="material-icons">expand_more</span>
+          <span className="material-icons">expand_more</span>
         </div>
         <div className="list">
-        {vegetables_list.map((ele, indx) => (
+          {vegetables_list.map((ele, indx) => (
             <p key={indx}>{ele.type}</p>
           ))}
         </div>

@@ -5,13 +5,16 @@ import { Provider } from "react-redux";
 import { store } from "./Redux/store";
 import MainRoutes from "./Pages/MainRoutes";
 import { BrowserRouter } from "react-router-dom";
+import { StyledEngineProvider } from "@mui/material/styles";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
-    <BrowserRouter>
-      <MainRoutes />
-    </BrowserRouter>
+    <StyledEngineProvider injectFirst>
+      <BrowserRouter>
+        <MainRoutes />
+      </BrowserRouter>
+    </StyledEngineProvider>
   </Provider>
 );
 

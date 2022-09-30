@@ -18,6 +18,10 @@
   padding: 0px 60px;
 }
 
+#navbar>div>div{
+  cursor: pointer;
+}
+
 .nav_box1 {
   display: grid;
   grid-template-columns: 44% 40%;
@@ -31,7 +35,7 @@
   gap: 6px;
   font-size: 13px;
   font-weight: bold;
-  color: rgb(160, 160, 160);
+  color: rgb(142, 142, 142);
 }
 
 .logo img {
@@ -84,7 +88,7 @@
   display: flex;
   gap: 6px;
   align-items: center;
-  color: rgb(165, 165, 165);
+  color: rgb(142, 142, 142);
   font-size: 14px;
   font-weight: bold;
   justify-content: center;
