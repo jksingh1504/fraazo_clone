@@ -31,6 +31,10 @@
   align-items: center;
 }
 
+.fruits_section > div:first-child span {
+  transition: transform 0.5s;
+}
+
 .fruits_section > div:last-child {
   position: absolute;
   top: 39px;
@@ -47,10 +51,22 @@
   visibility: visible;
 }
 
+.fruits_section:hover > div:first-child {
+  color: #00b041;
+}
+
+.fruits_section:hover > div:first-child span {
+  transform: rotate(180deg);
+}
+
 .vegetable_section > div:first-child {
   display: flex;
   height: 100%;
   align-items: center;
+}
+
+.vegetable_section > div:first-child span {
+  transition: transform 0.5s;
 }
 
 .vegetable_section > div:first-child p {
@@ -72,11 +88,19 @@
   visibility: hidden;
 }
 
+.vegetable_section:hover > div:first-child {
+  color: #00b041;
+}
+
 .vegetable_section:hover > div:last-child {
   visibility: visible;
 }
 
-.list{
+.vegetable_section:hover > div:first-child span {
+  transform: rotate(180deg);
+}
+
+.list {
   display: flex;
   flex-direction: column;
   width: max-content;
@@ -84,13 +108,13 @@
   gap: 4px;
 }
 
-.list>p{
+.list > p {
   line-height: 30px;
   margin: 0px;
   padding: 0px 16px;
   border-radius: 4px;
 }
 
-.list>p:hover{
+.list > p:hover {
   background-color: rgb(228, 228, 228);
 }
