@@ -16,15 +16,13 @@ const Filter = () => {
   const fruitFilter = [
     "Exotic Fruits",
     "Fresh Fruits",
-    "Fruite Combos",
-    "Mangoes",
+    "Fruite Combos"
   ];
 
   const vegFilter = [
     "Daily Veggies",
     "Herbs & Leafies",
     "Exotic Vegetables",
-    "Cuts,Peeled & Sproutes",
     "Vegetable Combos",
   ];
 
@@ -51,7 +49,7 @@ const Filter = () => {
           aria-controls="panel1d-content"
           id="panel1d-header"
         >
-          <Typography>Fruits</Typography>
+          <Typography sx={{fontWeight:"600"}}>Fruits</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ padding: "0px" }}>
           {fruitFilter.map((ele, indx) => (
@@ -81,7 +79,7 @@ const Filter = () => {
           aria-controls="panel1d-content"
           id="panel1d-header"
         >
-          <Typography>Vegetables</Typography>
+          <Typography sx={{fontWeight:"600"}}>Vegetables</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ padding: "0px" }}>
           {vegFilter.map((ele, indx) => (

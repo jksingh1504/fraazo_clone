@@ -78,7 +78,9 @@
 }
 
 #ProductCard > p {
-	margin: 0px 0px 16px;
+	margin: 0px;
+	height: 36px;
+	line-height: 16px;
 	font-size: 15px;
 }
 

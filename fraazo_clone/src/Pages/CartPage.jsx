@@ -115,7 +115,6 @@ const CartPage = ({setOpenCart}) => {
 				<br />
 				<br />
 				<br />
-				<br />
 				<img
 					style={{position:"relative",zIndex:"-1"}}
 					src="https://webasset.fraazo.com/production/empty_cart.35cdf7d10a7af693e2ea.png"

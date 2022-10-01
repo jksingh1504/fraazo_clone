@@ -52,7 +52,7 @@
 }
 
 .fruits_section:hover > div:first-child {
-  color: #00b041;
+  color: #49a892;
 }
 
 .fruits_section:hover > div:first-child span {
@@ -89,7 +89,7 @@
 }
 
 .vegetable_section:hover > div:first-child {
-  color: #00b041;
+  color: #49a892;
 }
 
 .vegetable_section:hover > div:last-child {
@@ -116,5 +116,6 @@
 }
 
 .list > p:hover {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(242, 242, 242);
+  color: #49a892;
 }

@@ -44,7 +44,7 @@ const ProductList = () => {
 						Breadcrumbs
 					</Typography>
 				</Breadcrumbs>
-				<Typography sx={{ height: "40px" }} color="text.primary">
+				<Typography sx={{ height: "40px",fontWeight:"600" }} color="text.primary">
 					Exotic Fruits
 				</Typography>
 				<Box id="productList">
