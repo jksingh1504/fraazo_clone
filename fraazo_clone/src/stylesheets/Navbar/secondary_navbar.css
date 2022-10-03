@@ -37,7 +37,7 @@
 
 .fruits_section > div:last-child {
   position: absolute;
-  top: 39px;
+  top: 38px;
   left: -4px;
   background-color: white;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -52,7 +52,7 @@
 }
 
 .fruits_section:hover > div:first-child {
-  color: #49a892;
+  color: #0ab05b;
 }
 
 .fruits_section:hover > div:first-child span {
@@ -78,7 +78,7 @@
 
 .vegetable_section > div:last-child {
   position: absolute;
-  top: 39px;
+  top: 38px;
   left: -4px;
   background-color: white;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -89,7 +89,7 @@
 }
 
 .vegetable_section:hover > div:first-child {
-  color: #49a892;
+  color: #0ab05b;
 }
 
 .vegetable_section:hover > div:last-child {
@@ -108,14 +108,19 @@
   gap: 4px;
 }
 
-.list > p {
+.list > a {
+  display: inline-block;
+  text-decoration: none;
   line-height: 30px;
   margin: 0px;
   padding: 0px 16px;
   border-radius: 4px;
 }
 
-.list > p:hover {
-  background-color: rgb(242, 242, 242);
-  color: #49a892;
+.list > a:hover {
+  color:black;
+}
+
+.active{
+  color: #0ab05b;
 }

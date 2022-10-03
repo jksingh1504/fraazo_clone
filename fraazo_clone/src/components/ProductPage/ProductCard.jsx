@@ -12,7 +12,7 @@ const ProductCard = ({ product}) => {
 	return (
 		<Box id="ProductCard" >
             <Box className={product["frz-priceslash-discount"]?"discount":"noDiscount"}>{product["frz-priceslash-discount"]}</Box>
-			<img width="100%" src={product["lazy-image src"]} alt="" />
+			<img width="100%" src={product["lazy-image src"] || product["lazy-image-src"]+"&format=webp"} alt="" />
 			<p>{product["frz-fw-500"]}</p>
 			<Box>
 				<Box>

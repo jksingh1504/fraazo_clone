@@ -9,21 +9,42 @@ import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import React, { useState } from "react";
 import "../../stylesheets/ProductPage/ProductPage.css";
 import AddIcon from "@mui/icons-material/Add";
+import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import * as action from "../../Redux/AppRedux/actions";
 
 const Filter = () => {
-  const [expanded, setExpanded] = useState("panel1");
+  let active_panel;
+
+  const active_category = useSelector(
+    (store) => store.AppReducer.active_category
+  );
+
+  if (
+    active_category === "exotic-fruits" ||
+    active_category === "fresh-fruits" ||
+    active_category === "fruit-combos"
+  ) {
+    active_panel = "panel1";
+  } else {
+    active_panel = "panel2";
+  }
+
+  const dispatch = useDispatch();
+
+  const [expanded, setExpanded] = useState(active_panel);
 
   const fruitFilter = [
-    "Exotic Fruits",
-    "Fresh Fruits",
-    "Fruite Combos"
+    { content: "Exotic Fruits", link: "exotic-fruits" },
+    { content: "Fresh Fruits", link: "fresh-fruits" },
+    { content: "Fruit Combos", link: "fruit-combos" },
   ];
 
   const vegFilter = [
-    "Daily Veggies",
-    "Herbs & Leafies",
-    "Exotic Vegetables",
-    "Vegetable Combos",
+    { content: "Daily Veggies", link: "daily-veggies" },
+    { content: "Herbs & Leafies", link: "herbs-and-leafies" },
+    { content: "Exotic Vegetables", link: "exotic-vegetables" },
+    { content: "Vegetable Combos", link: "vegetable-combos" },
   ];
 
   const handleChange = (x) => {
@@ -45,20 +66,27 @@ const Filter = () => {
       >
         <AccordionSummary
           sx={{ flexDirection: "row-reverse" }}
-          expandIcon={<AddIcon sx={{ color: "#5dc6ad" }} />}
+          expandIcon={<AddIcon sx={{ color: "#0ab05b" }} />}
           aria-controls="panel1d-content"
           id="panel1d-header"
         >
-          <Typography sx={{fontWeight:"600"}}>Fruits</Typography>
+          <Typography>Fruits</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ padding: "0px" }}>
           {fruitFilter.map((ele, indx) => (
-            <Box className="filterchild" key={indx}>
-              <ArrowForwardIosSharpIcon
-                sx={{ fontSize: "11px", marginRight: "6px" }}
-              />
-              {fruitFilter[indx]}
-            </Box>
+            <Link
+              onClick={() => dispatch(action.set_active_category(ele.link))}
+              className={active_category === ele.link ? "active" : ""}
+              to={`/fruits/${ele.link}`}
+              key={indx}
+            >
+              <Box className="filterchild">
+                <ArrowForwardIosSharpIcon
+                  sx={{ fontSize: "11px", marginRight: "6px" }}
+                />
+                {ele.content}
+              </Box>
+            </Link>
           ))}
         </AccordionDetails>
       </Accordion>
@@ -75,20 +103,27 @@ const Filter = () => {
       >
         <AccordionSummary
           sx={{ flexDirection: "row-reverse" }}
-          expandIcon={<AddIcon sx={{ color: "#5dc6ad" }} />}
+          expandIcon={<AddIcon sx={{ color: "#0ab05b" }} />}
           aria-controls="panel1d-content"
           id="panel1d-header"
         >
-          <Typography sx={{fontWeight:"600"}}>Vegetables</Typography>
+          <Typography>Vegetables</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ padding: "0px" }}>
           {vegFilter.map((ele, indx) => (
-            <Box className="filterchild" key={indx}>
-              <ArrowForwardIosSharpIcon
-                sx={{ fontSize: "11px", marginRight: "6px" }}
-              />
-              {vegFilter[indx]}
-            </Box>
+            <Link
+              onClick={() => dispatch(action.set_active_category(ele.link))}
+              className={active_category === ele.link ? "active" : ""}
+              to={`/vegetables/${ele.link}`}
+              key={indx}
+            >
+              <Box className="filterchild" key={indx}>
+                <ArrowForwardIosSharpIcon
+                  sx={{ fontSize: "11px", marginRight: "6px" }}
+                />
+                {ele.content}
+              </Box>
+            </Link>
           ))}
         </AccordionDetails>
       </Accordion>

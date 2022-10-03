@@ -8,6 +8,7 @@ const MainRoutes = () => {
     <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/products" element={<ProductPage/>}/>
+        <Route path="/:type/:category" element={<ProductPage/>}/>
     </Routes>
   )
 }

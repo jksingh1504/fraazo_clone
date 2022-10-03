@@ -24,6 +24,10 @@ export const setCurouselCol=(payload)=>{
 	return {type:actionTypes.SET_CUROUSEL_COL,payload}
 }
 
+export const set_active_category=(payload)=>{
+ return {type:actionTypes.SET_ACTIVE_CATEGORY,payload}
+}
+
 
 export const getCart = (payload) => (dispatch) => {
 	dispatch(getProductRequest());

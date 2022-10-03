@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-const connectDB = mongoose.connect(
-  "mongodb+srv://user_sri:Sri00739@cluster0.bggnnvl.mongodb.net/loseit?retryWrites=true&w=majority"
-);
+const connectDB = mongoose.connect(process.env.mongo_atlas_link);
 
 module.exports = connectDB;

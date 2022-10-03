@@ -1,20 +1,28 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import "../../stylesheets/Navbar/secondary_navbar.css";
+import * as action from "../../Redux/AppRedux/actions";
 
 const SecondaryNavbar = () => {
   const fruits_list = [
-    { type: "Exotic Fruits" },
-    { type: "Fresh Fruits" },
-    { type: "Fruit Combos" },
+    { type: "Exotic Fruits", link: "exotic-fruits" },
+    { type: "Fresh Fruits", link: "fresh-fruits" },
+    { type: "Fruit Combos", link: "fruit-combos" },
   ];
 
   const vegetables_list = [
-    { type: "Daily Veggies" },
-    { type: "Herbs and Leafies" },
-    { type: "Exotic Vegetables" },
-    { type: "Cuts, Peeled and Sprouts" },
-    { type: "Vegetable Combos" },
+    { type: "Daily Veggies", link: "daily-veggies" },
+    { type: "Herbs & Leafies", link: "herbs-and-leafies" },
+    { type: "Exotic Vegetables", link: "exotic-vegetables" },
+    { type: "Vegetable Combos", link: "vegetable-combos" },
   ];
+
+  const active_category = useSelector(
+    (store) => store.AppReducer.active_category
+  );
+
+  const dispatch = useDispatch();
 
   return (
     <div id="secondary_nav">
@@ -25,7 +33,14 @@ const SecondaryNavbar = () => {
         </div>
         <div className="list">
           {fruits_list.map((ele, indx) => (
-            <p key={indx}>{ele.type}</p>
+            <Link
+              onClick={() => dispatch(action.set_active_category(ele.link))}
+              className={active_category === ele.link ? "active" : ""}
+              to={`/fruits/${ele.link}`}
+              key={indx}
+            >
+              {ele.type}
+            </Link>
           ))}
         </div>
       </div>
@@ -36,7 +51,14 @@ const SecondaryNavbar = () => {
         </div>
         <div className="list">
           {vegetables_list.map((ele, indx) => (
-            <p key={indx}>{ele.type}</p>
+            <Link
+              onClick={() => dispatch(action.set_active_category(ele.link))}
+              className={active_category === ele.link ? "active" : ""}
+              to={`/vegetables/${ele.link}`}
+              key={indx}
+            >
+              {ele.type}
+            </Link>
           ))}
         </div>
       </div>

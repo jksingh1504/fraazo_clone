@@ -183,7 +183,7 @@ const BestDeals = () => {
     <div className="show_case">
       <h1>BEST DEALS</h1>
       <br />
-      <Carousel cols={curousel_col} rows={1} gap={10} loop={false}>
+      <Carousel cols={curousel_col} rows={1} gap={6} loop={false}>
         {best_deals.map((item, index) => (
           <Carousel.Item key={index}>
             <Box className={styles.carousalBox}>

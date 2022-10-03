@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../stylesheets/HomePage/section_box.css";
+import * as action from "../../Redux/AppRedux/actions";
+import { useDispatch } from "react-redux";
 
 const SectionBox = () => {
+
+const dispatch=useDispatch()
+
   return (
     <>
       <br />
@@ -10,7 +15,7 @@ const SectionBox = () => {
       <br />
       <br />
       <div id="section_box">
-        <Link to="/products">
+        <Link to="/fruits/exotic-fruits">
           <div>
             <img
               src="https://imagemaster.fraazo.com/fraazo-master/webban/Fruits.png"
@@ -18,7 +23,7 @@ const SectionBox = () => {
             />
           </div>
         </Link>
-        <Link to="/products">
+        <Link onClick={()=>dispatch(action.set_active_category("daily-veggies"))} to="/vegetables/daily-veggies">
           <div>
             <img
               src="https://imagemaster.fraazo.com/fraazo-master/webban/Vegetables.png"
