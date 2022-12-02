@@ -6,7 +6,7 @@ const initalState = {
   cart: JSON.parse(localStorage.getItem("frazo_cart")) || {},
   loading: false,
   error: false,
-  active_category: "exotic-fruits"
+  active_category: ""
 };
 
 export const AppReducer = (state = initalState, action) => {

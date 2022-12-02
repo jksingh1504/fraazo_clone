@@ -125,7 +125,7 @@ const Fruits = () => {
 
   return (
     <div className="show_case">
-      <h1>Fruits <Link to="/products" style={{textDecoration:"none",color:"rgb(255, 78, 78)",fontSize:"16px",fontWeight:"500"}}>(Veiw All)</Link></h1>
+      <h1>Fruits <Link to="/fruits/exotic-fruits" style={{textDecoration:"none",color:"rgb(255, 78, 78)",fontSize:"16px",fontWeight:"500"}}>(Veiw All)</Link></h1>
       <br />
       <Carousel cols={curousel_col} rows={1} gap={6} loop={false}>
         {fruits.map((item, index) => (
